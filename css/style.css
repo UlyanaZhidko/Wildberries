@@ -56,10 +56,19 @@ body {
 
 .slide {
     padding: 90px 0 110px;
+    min-height: 568px;
 }
 
 .slide-1 {
     background: #B4D1E0 url('../img/slide-1.png') no-repeat top right 30%;
+}
+
+.slide-2 {
+    background: #e0b4bf url('../img/slide-1.png') no-repeat top right 30%;
+}
+
+.slide-3 {
+    background: #b8e0b4 url('../img/slide-1.png') no-repeat top right 30%;
 }
 
 .label {
@@ -105,6 +114,7 @@ body {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
+    z-index: 9;
 }
 
 .slide-button {
@@ -331,4 +341,44 @@ body {
 .master-card {
     width: 38px;
     opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+    .slide {
+        background-size: cover;
+    }
+    .card-3 {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider-nav {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .slide-title {
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+    .card {
+        background-position: left top;
+        padding: 30px;
+        min-height: 300px;
+    }
+    .card-4 {
+        background-position: right top;
+    }
+    .goods-card .label {
+        left: 100px;
+    }
+}
+
+@media (max-width: 410px) {
+    .goods-card .label {
+        left: 50px;
+    }
 }
